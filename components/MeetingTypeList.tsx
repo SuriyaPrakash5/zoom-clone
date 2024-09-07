@@ -1,16 +1,13 @@
 "use client";
-import Image from "next/image";
-import React, { use, useState } from "react";
+import React, { useState } from "react";
 import HomeCard from "./HomeCard";
 import { useRouter } from "next/navigation";
 import MeetingModel from "./MeetingModel";
 import { useUser } from "@clerk/nextjs";
 import { Call, useStreamVideoClient } from "@stream-io/video-react-sdk";
 import { useToast } from "@/hooks/use-toast";
-import { title } from "process";
 import { Textarea } from "./ui/textarea";
 import ReactDatePicker from "react-datepicker";
-import Loader from "./ui/Loader";
 import { Input } from "./ui/input";
 
 const MeetingTypeList = () => {
